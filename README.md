@@ -13,7 +13,7 @@ After installing the Docker CLI tool, now you're ready to start working with *do
 
 ### 1.1 Clone the repository.
   ```
-  git clone https://github.com/sandovaledwin/docker-angular-cli
+  git clone https://github.com/sandovaledwin/docker-angular-cli/tree/angular-cli-v1.6.8
   ```
 
 ### 1.2 Go into the directory.
