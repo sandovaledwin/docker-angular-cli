@@ -1,5 +1,5 @@
 # docker-angular-cli
-This repository contains the Angular CLI tool (1.4.x) running over Docker. This project will help you to develop in not time any web application using the latest version of NodeJS (8.x)
+This repository contains the Angular CLI tool (1.6.x) running over Docker. This project will help you to develop in not time any web application using the latest version of NodeJS (9.x)
 
 * [Builded Image in Docker HUB - Download](https://hub.docker.com/r/sandovaledwin/angular-cli/).
 
@@ -24,17 +24,17 @@ After installing the Docker CLI tool, now you're ready to start working with *do
 ## 2. Creating the Docker Image.
 Now, you're ready for creating the new docker-angular-cli Docker Image in your computer.
   ```
-  docker build -t docker-angular-cli:1.4.8 .
+  docker build -t docker-angular-cli:1.6.8 .
   ```
 
 ## 3. Creating your first Angular project.
 ```
-docker run -it --rm -w /app -v $(pwd):/app docker-angular-cli:1.4.8 /home/node/.npm-global/lib/node_modules/@angular/cli/bin/ng new my-project
+docker run -it --rm -w /app -v $(pwd):/app docker-angular-cli:1.6.8 ng new my-project
 ```
 
 ## 4. Running the project.
 ```
-docker run -it --rm -w /app -v $(pwd)/my-project:/app -p 4200:4200 docker-angular-cli:1.4.8 /home/node/.npm-global/lib/node_modules/@angular/cli/bin/ng serve --host 0.0.0.0
+docker run -it --rm -w /app -v $(pwd)/my-project:/app -p 4200:4200 docker-angular-cli:1.6.8 ng serve --host 0.0.0.0
 ```
 
 ## 5. Testing the project.
